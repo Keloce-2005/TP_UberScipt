@@ -29,7 +29,7 @@ export class User {
   constructor(id: number, name: string, initialBalance: number) {
     this.id = id
     this.name = name
-    this.wallets = [{ label: 'Principal', balance: initialBalance }]
+    this.wallets = [{ label: 'SoldePrincipal', balance: initialBalance }]
     this.orders = this.loadOrders()
     this.nextOrderId = this.orders.length > 0
       ? Math.max(...this.orders.map(o => o.id)) + 1
