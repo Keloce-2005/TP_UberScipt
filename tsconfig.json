@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                // Version JS cible : ES6+ (let, const, arrow functions)
+    "module": "ESNext",           // Système de modules : commonjs pour Node, "ESNext" pour front moderne
+    "strict": true,                 // Active toutes les vérifications strictes (type checking strict)
+    "esModuleInterop": true,        // Permet l'import de modules CommonJS via import syntaxe
+    "forceConsistentCasingInFileNames": true, // Empêche les erreurs liées à la casse dans les noms de fichiers
+    "skipLibCheck": true,           // Ignore la vérification des fichiers de déclaration de type (.d.ts)
+    "outDir": "./dist",             // Répertoire de sortie pour le JS compilé
+    "rootDir": "./src"              // Répertoire racine des fichiers TS
+  },
+  "include": ["src"],               // Fichiers à compiler (tout dans src)
+  "exclude": ["node_modules", "dist"] // Fichiers/folders à ignorer
+}
