@@ -34,6 +34,9 @@ export class User {
     this.nextOrderId = this.orders.length > 0
       ? Math.max(...this.orders.map(o => o.id)) + 1
       : 1
+      
+    const dejaDepense = this.orders.reduce((sum, o) => sum + o.total, 0)
+    this.wallets[0].balance -= dejaDepense
   }
 
   get totalBalance(): number {
