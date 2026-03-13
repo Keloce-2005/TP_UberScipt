@@ -59,12 +59,12 @@ export class User {
       )
     }
 
-    let remaining = total
+    let soldeRestant = total
     for (const wallet of this.wallets) {
-      if (remaining <= 0) break
-      const deduct = Math.min(wallet.balance, remaining)
+      if (soldeRestant <= 0) break
+      const deduct = Math.min(wallet.balance, soldeRestant)
       wallet.balance -= deduct
-      remaining -= deduct
+      soldeRestant -= deduct
     }
 
     const order: Order = {

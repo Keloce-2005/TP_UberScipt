@@ -2,7 +2,7 @@ import { Meal, fetchMeals, addLocalMeal, getLocalMeals, MealDraft } from './meal
 import { User, TropPauvreErreur } from './user.js'
 
 
-const currentUser = new User(1, 'Bob', 30)
+const currentUser = new User(1, 'Oceane', 50)
 let allMeals: Meal[] = []
 let menuSelection: Meal[] = []
 
